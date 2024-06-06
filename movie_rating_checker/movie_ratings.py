@@ -1,9 +1,15 @@
-
 import requests
+import config
 
-API_KEY = 'e25d2434'
+# Retrieve the API key from the environment variable
+API_KEY = config.OMDB_API_KEY
+IBMD_ID = config.IBMD_ID
 
-base_url = f"https://www.omdbapi.com/?i=tt3896198&apikey={API_KEY}"
+if not API_KEY:
+    raise ValueError("API key not found. Set the OMDB_API_KEY environment variable.")
+
+
+base_url = f"https://www.omdbapi.com/?i={IBMD_ID}&apikey={API_KEY}"
 
 header = {
     "accept": "application/json",
