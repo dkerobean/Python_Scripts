@@ -38,4 +38,9 @@ def get_movie_rating(title):
 if __name__ == "__main__":
     title = input("Enter movie title: ")
     movie_info = get_movie_rating(title)
-    print(movie_info)
+
+    if isinstance(movie_info, dict):
+        for key, value in movie_info.items():
+            print(f"{key}: {value}")
+    else:
+        print(movie_info)
