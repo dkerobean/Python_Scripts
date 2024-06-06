@@ -11,7 +11,7 @@ header = {
 
 
 def get_movie_rating(title):
-    url = base_url + f"t={title}"
+    url = base_url + f"&t={title}"
     response = requests.get(url, headers=header)
     data = response.json()
 
