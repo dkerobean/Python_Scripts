@@ -29,6 +29,7 @@ def get_movie_rating(title):
         return movie_info
 
 
-title = input("Enter movie title: ")
-movie_info = get_movie_rating(title)
-print(movie_info)
+if __name__ == "__main__":
+    title = input("Enter movie title: ")
+    movie_info = get_movie_rating(title)
+    print(movie_info)
