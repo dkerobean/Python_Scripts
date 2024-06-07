@@ -3,3 +3,18 @@ DEBUG 2024-06-07 12:48:37,267 - Starting new HTTPS connection (1): www.omdbapi.c
 DEBUG 2024-06-07 12:48:38,218 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=dune%20 HTTP/1.1" 200 None
 INFO 2024-06-07 12:48:38,219 - Recieved response from API
 INFO 2024-06-07 12:48:38,220 - Retrieved movie info {'Title': 'Dune', 'Year': '2021', 'Genre': 'Action, Adventure, Drama', 'imdbRating': '8.0', 'imdbVotes': '835,661', 'Plot': "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future."}
+INFO 2024-06-07 12:59:40,868 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=(['dune', 'the fall'],)
+DEBUG 2024-06-07 12:59:40,922 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 12:59:41,842 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=(%5B'dune',%20'the%20fall'%5D,) HTTP/1.1" 200 47
+INFO 2024-06-07 12:59:41,843 - Recieved response from API
+ERROR 2024-06-07 12:59:41,843 - Movie not found
+INFO 2024-06-07 13:00:55,496 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=(['dune', 'thefall'],)
+DEBUG 2024-06-07 13:00:55,648 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 13:00:56,582 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=(%5B'dune',%20'thefall'%5D,) HTTP/1.1" 200 47
+INFO 2024-06-07 13:00:56,582 - Recieved response from API
+ERROR 2024-06-07 13:00:56,582 - Movie not found
+INFO 2024-06-07 13:01:41,847 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=['dune']
+DEBUG 2024-06-07 13:01:41,894 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 13:01:42,502 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=%5B'dune'%5D HTTP/1.1" 200 None
+INFO 2024-06-07 13:01:42,504 - Recieved response from API
+INFO 2024-06-07 13:01:42,504 - Retrieved movie info {'Title': 'Dune', 'Year': '2021', 'Genre': 'Action, Adventure, Drama', 'imdbRating': '8.0', 'imdbVotes': '835,661', 'Plot': "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future."}
