@@ -1,9 +1,16 @@
 import requests
 import config
+import logging
 
 # Retrieve the API key from the environment variable
 API_KEY = config.OMDB_API_KEY
 IBMD_ID = config.IBMD_ID
+
+# implement logging
+LOG_FORMAT = '%(levelname)s %(asctime)s - %(message)s'
+
+logging.basicConfig(filename="rating.log", level=logging.DEBUG, format=LOG_FORMAT)
+log = logging.getLogger()
 
 if not API_KEY:
     raise ValueError("API key not found. Set the OMDB_API_KEY environment variable.")
@@ -18,21 +25,32 @@ header = {
 
 def get_movie_rating(title):
     url = base_url + f"&t={title}"
-    response = requests.get(url, headers=header)
-    data = response.json()
+    log.info(f"Requesting URL: {url}")
 
-    if 'Error' in data:
-        return "Error: Movie not found"
-    else:
-        movie_info = {
-            "Title": data.get("Title", ""),
-            "Year": data.get("Year", ""),
-            "Genre": data.get("Genre", ""),
-            "imdbRating": data.get("imdbRating", ""),
-            "imdbVotes": data.get("imdbVotes", ""),
-            "Plot": data.get("Plot", "")
-        }
-        return movie_info
+    try:
+        response = requests.get(url, headers=header)
+        response.raise_for_status()
+        data = response.json()
+        log.info("Recieved response from API")
+
+        if 'Error' in data:
+            log.error("Movie not found")
+            return "Error: Movie not found"
+        else:
+            movie_info = {
+                "Title": data.get("Title", ""),
+                "Year": data.get("Year", ""),
+                "Genre": data.get("Genre", ""),
+                "imdbRating": data.get("imdbRating", ""),
+                "imdbVotes": data.get("imdbVotes", ""),
+                "Plot": data.get("Plot", "")
+            }
+            log.info(f"Retrieved movie info {movie_info}")
+            return movie_info
+
+    except requests.exceptions.RequestException as e:
+        log.error(f"Request failed: {e}")
+        return "Error: Request failed"
 
 
 if __name__ == "__main__":
