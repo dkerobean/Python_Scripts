@@ -18,3 +18,28 @@ DEBUG 2024-06-07 13:01:41,894 - Starting new HTTPS connection (1): www.omdbapi.c
 DEBUG 2024-06-07 13:01:42,502 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=%5B'dune'%5D HTTP/1.1" 200 None
 INFO 2024-06-07 13:01:42,504 - Recieved response from API
 INFO 2024-06-07 13:01:42,504 - Retrieved movie info {'Title': 'Dune', 'Year': '2021', 'Genre': 'Action, Adventure, Drama', 'imdbRating': '8.0', 'imdbVotes': '835,661', 'Plot': "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future."}
+INFO 2024-06-07 17:56:12,006 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=['atlas']
+DEBUG 2024-06-07 17:56:12,078 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 17:56:13,302 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=%5B'atlas'%5D HTTP/1.1" 200 None
+INFO 2024-06-07 17:56:13,302 - Recieved response from API
+INFO 2024-06-07 17:56:13,302 - Retrieved movie info {'Title': 'Cloud Atlas', 'Year': '2012', 'Genre': 'Drama, Mystery, Sci-Fi', 'imdbRating': '7.4', 'imdbVotes': '374,309', 'Plot': 'An exploration of how the actions of individual lives impact one another in the past, present and future, as one soul is shaped from a killer into a hero, and an act of kindness ripples across centuries to inspire a revolution.'}
+INFO 2024-06-07 17:58:15,470 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t= atlas 2024
+DEBUG 2024-06-07 17:58:15,522 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 17:58:16,779 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=%20atlas%202024 HTTP/1.1" 200 47
+INFO 2024-06-07 17:58:16,780 - Recieved response from API
+ERROR 2024-06-07 17:58:16,780 - Movie not found
+INFO 2024-06-07 17:58:28,134 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=ATLAS
+DEBUG 2024-06-07 17:58:28,143 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 17:58:29,175 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=ATLAS HTTP/1.1" 200 None
+INFO 2024-06-07 17:58:29,175 - Recieved response from API
+INFO 2024-06-07 17:58:29,175 - Retrieved movie info {'Title': 'Atlas', 'Year': '2024', 'Genre': 'Action, Adventure, Drama', 'imdbRating': '5.6', 'imdbVotes': '25,153', 'Plot': 'In a bleak-sounding future, an A.I. soldier has determined that the only way to end war is to end humanity.'}
+INFO 2024-06-07 17:59:34,916 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=61st Street
+DEBUG 2024-06-07 17:59:35,155 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 17:59:36,279 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=61st%20Street HTTP/1.1" 200 None
+INFO 2024-06-07 17:59:36,281 - Recieved response from API
+INFO 2024-06-07 17:59:36,282 - Retrieved movie info {'Title': '61st Street', 'Year': '2022–', 'Genre': 'Crime, Drama, Thriller', 'imdbRating': '6.7', 'imdbVotes': '1,206', 'Plot': 'Follows Moses Johnson, a promising high school athlete, who is swept up into the infamously corrupt Chicago criminal justice system.'}
+INFO 2024-06-07 18:01:08,585 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=the wedding ringer
+DEBUG 2024-06-07 18:01:08,604 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-07 18:01:10,295 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=the%20wedding%20ringer HTTP/1.1" 200 None
+INFO 2024-06-07 18:01:10,296 - Recieved response from API
+INFO 2024-06-07 18:01:10,296 - Retrieved movie info {'Title': 'The Wedding Ringer', 'Year': '2015', 'Genre': 'Comedy, Romance', 'imdbRating': '6.6', 'imdbVotes': '80,173', 'Plot': 'Two weeks shy of his wedding, a socially awkward guy enters into a charade by hiring the owner of a company that provides best men for grooms in need.'}

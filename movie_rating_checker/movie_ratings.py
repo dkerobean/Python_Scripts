@@ -54,9 +54,8 @@ def get_movie_rating(title):
 
 
 if __name__ == "__main__":
-    titles = input("Enter movie titles (comma-separated): ").split(',')
-    titles = [title.strip() for title in titles]
-    movie_info = get_movie_rating(titles)
+    title = input("Enter movie title: ")
+    movie_info = get_movie_rating(title)
 
     if isinstance(movie_info, dict):
         for key, value in movie_info.items():
