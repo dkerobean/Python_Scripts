@@ -43,3 +43,58 @@ DEBUG 2024-06-07 18:01:08,604 - Starting new HTTPS connection (1): www.omdbapi.c
 DEBUG 2024-06-07 18:01:10,295 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=the%20wedding%20ringer HTTP/1.1" 200 None
 INFO 2024-06-07 18:01:10,296 - Recieved response from API
 INFO 2024-06-07 18:01:10,296 - Retrieved movie info {'Title': 'The Wedding Ringer', 'Year': '2015', 'Genre': 'Comedy, Romance', 'imdbRating': '6.6', 'imdbVotes': '80,173', 'Plot': 'Two weeks shy of his wedding, a socially awkward guy enters into a charade by hiring the owner of a company that provides best men for grooms in need.'}
+INFO 2024-06-08 11:04:12,228 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=hit man
+DEBUG 2024-06-08 11:04:12,283 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-08 11:04:18,921 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=hit%20man HTTP/1.1" 200 None
+INFO 2024-06-08 11:04:18,923 - Recieved response from API
+INFO 2024-06-08 11:04:18,923 - Retrieved movie info {'Title': 'Hit Man', 'Year': '2023', 'Genre': 'Action, Comedy', 'imdbRating': '7.6', 'imdbVotes': '1,428', 'Plot': 'A professor moonlighting as a hit man of sorts for his city police department, descends into dangerous, dubious territory when he finds himself attracted to a woman who enlists his services.'}
+INFO 2024-06-08 11:07:12,467 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=kill craft
+DEBUG 2024-06-08 11:07:12,485 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-08 11:07:13,351 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=kill%20craft HTTP/1.1" 200 47
+INFO 2024-06-08 11:07:13,353 - Recieved response from API
+ERROR 2024-06-08 11:07:13,353 - Movie not found
+INFO 2024-06-08 11:07:41,503 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=kill your lover 
+DEBUG 2024-06-08 11:07:41,523 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-08 11:07:42,136 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=kill%20your%20lover%20 HTTP/1.1" 200 None
+INFO 2024-06-08 11:07:42,138 - Recieved response from API
+INFO 2024-06-08 11:07:42,138 - Retrieved movie info {'Title': 'Kill Your Lover', 'Year': '2023', 'Genre': 'Horror', 'imdbRating': 'N/A', 'imdbVotes': 'N/A', 'Plot': 'When Dakota tries to break off her toxic relationship with Axel, it starts transforming him into a monstrous creature. He gradually succumbs to the poison of the decaying relationship, becoming a creature with increased aggression...'}
+INFO 2024-06-08 15:13:44,893 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=lary crowne
+DEBUG 2024-06-08 15:13:44,936 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-08 15:13:45,868 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=lary%20crowne HTTP/1.1" 200 47
+INFO 2024-06-08 15:13:45,869 - Recieved response from API
+ERROR 2024-06-08 15:13:45,869 - Movie not found
+INFO 2024-06-08 15:13:53,243 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=larry crowne
+DEBUG 2024-06-08 15:13:53,256 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-08 15:13:53,839 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=larry%20crowne HTTP/1.1" 200 None
+INFO 2024-06-08 15:13:53,841 - Recieved response from API
+INFO 2024-06-08 15:13:53,841 - Retrieved movie info {'Title': 'Larry Crowne', 'Year': '2011', 'Genre': 'Comedy, Drama, Romance', 'imdbRating': '6.1', 'imdbVotes': '70,826', 'Plot': 'After losing his job, a middle-aged man reinvents himself by going back to college.'}
+INFO 2024-06-09 11:55:26,342 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=for love and honey 
+DEBUG 2024-06-09 11:55:26,398 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-09 11:55:26,996 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=for%20love%20and%20honey%20 HTTP/1.1" 200 47
+INFO 2024-06-09 11:55:26,997 - Recieved response from API
+ERROR 2024-06-09 11:55:26,997 - Movie not found
+INFO 2024-06-09 11:55:45,811 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=anatomy of a fall 
+DEBUG 2024-06-09 11:55:45,829 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-09 11:55:46,433 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=anatomy%20of%20a%20fall%20 HTTP/1.1" 200 None
+INFO 2024-06-09 11:55:46,435 - Recieved response from API
+INFO 2024-06-09 11:55:46,435 - Retrieved movie info {'Title': 'Anatomy of a Fall', 'Year': '2023', 'Genre': 'Crime, Drama, Thriller', 'imdbRating': '7.7', 'imdbVotes': '108,180', 'Plot': "A woman is suspected of murder after her husband's death; their half-blind son faces a moral dilemma as the main witness."}
+INFO 2024-06-09 11:57:23,045 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=the worst person in the world
+DEBUG 2024-06-09 11:57:23,097 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-09 11:57:23,712 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=the%20worst%20person%20in%20the%20world HTTP/1.1" 200 None
+INFO 2024-06-09 11:57:23,714 - Recieved response from API
+INFO 2024-06-09 11:57:23,714 - Retrieved movie info {'Title': 'The Worst Person in the World', 'Year': '2021', 'Genre': 'Comedy, Drama, Romance', 'imdbRating': '7.7', 'imdbVotes': '97,572', 'Plot': 'The chronicles of four years in the life of Julie, a young woman who navigates the troubled waters of her love life and struggles to find her career path, leading her to take a realistic look at who she really is.'}
+INFO 2024-06-09 12:05:37,279 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=babylon 2022
+DEBUG 2024-06-09 12:05:37,389 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-09 12:05:38,518 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=babylon%202022 HTTP/1.1" 200 47
+INFO 2024-06-09 12:05:38,519 - Recieved response from API
+ERROR 2024-06-09 12:05:38,520 - Movie not found
+INFO 2024-06-09 12:05:45,044 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=babylon
+DEBUG 2024-06-09 12:05:45,060 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-09 12:05:45,990 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=babylon HTTP/1.1" 200 None
+INFO 2024-06-09 12:05:45,992 - Recieved response from API
+INFO 2024-06-09 12:05:45,992 - Retrieved movie info {'Title': 'Babylon', 'Year': '2022', 'Genre': 'Comedy, Drama, History', 'imdbRating': '7.1', 'imdbVotes': '166,230', 'Plot': 'A tale of outsized ambition and outrageous excess, it traces the rise and fall of multiple characters during an era of unbridled decadence and depravity in early Hollywood.'}
+INFO 2024-06-09 18:53:18,387 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=the creator 
+DEBUG 2024-06-09 18:53:18,447 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-09 18:53:19,058 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=the%20creator%20 HTTP/1.1" 200 None
+INFO 2024-06-09 18:53:19,060 - Recieved response from API
+INFO 2024-06-09 18:53:19,060 - Retrieved movie info {'Title': 'The Creator', 'Year': '2023', 'Genre': 'Action, Adventure, Drama', 'imdbRating': '6.8', 'imdbVotes': '159,351', 'Plot': 'Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the secret weapon, a robot in the form of a young child.'}

@@ -1,6 +1,8 @@
 import requests
 import config
 import logging
+from datetime import timedelta
+import requests_cache
 
 # Retrieve the API key from the environment variable
 API_KEY = config.OMDB_API_KEY
@@ -21,6 +23,9 @@ base_url = f"https://www.omdbapi.com/?i={IBMD_ID}&apikey={API_KEY}"
 header = {
     "accept": "application/json",
 }
+
+# Configure requests-cache
+requests_cache.install_cache('omdb_cache', expire_after=timedelta(hours=1))
 
 
 def get_movie_rating(title):
