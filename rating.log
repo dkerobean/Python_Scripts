@@ -98,3 +98,20 @@ DEBUG 2024-06-09 18:53:18,447 - Starting new HTTPS connection (1): www.omdbapi.c
 DEBUG 2024-06-09 18:53:19,058 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=the%20creator%20 HTTP/1.1" 200 None
 INFO 2024-06-09 18:53:19,060 - Recieved response from API
 INFO 2024-06-09 18:53:19,060 - Retrieved movie info {'Title': 'The Creator', 'Year': '2023', 'Genre': 'Action, Adventure, Drama', 'imdbRating': '6.8', 'imdbVotes': '159,351', 'Plot': 'Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the secret weapon, a robot in the form of a young child.'}
+DEBUG 2024-06-18 20:36:02,826 - Initializing backend: None omdb_cache
+DEBUG 2024-06-18 20:36:02,826 - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+DEBUG 2024-06-18 20:36:02,827 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:responses
+DEBUG 2024-06-18 20:36:02,828 - Initialized SQLiteDict with serializer: None
+DEBUG 2024-06-18 20:36:02,828 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:redirects
+DEBUG 2024-06-18 20:36:02,829 - Patching requests.Session with class: _ConfiguredCachedSession
+INFO 2024-06-18 20:36:12,324 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=love hard 
+DEBUG 2024-06-18 20:36:12,324 - Initializing backend: <SQLiteCache(name=omdb_cache)> omdb_cache
+DEBUG 2024-06-18 20:36:12,370 - Cache directives from request headers: CacheDirectives()
+DEBUG 2024-06-18 20:36:12,370 - Pre-read cache checks: Passed
+DEBUG 2024-06-18 20:36:12,370 - Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+DEBUG 2024-06-18 20:36:12,370 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-18 20:36:13,421 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=love%20hard%20 HTTP/1.1" 200 None
+DEBUG 2024-06-18 20:36:13,423 - Pre-write cache checks: Passed
+DEBUG 2024-06-18 20:36:13,429 - Closing backend connections
+INFO 2024-06-18 20:36:13,429 - Recieved response from API
+INFO 2024-06-18 20:36:13,429 - Retrieved movie info {'Title': 'Love Hard', 'Year': '2021', 'Genre': 'Comedy, Romance', 'imdbRating': '6.3', 'imdbVotes': '61,374', 'Plot': "An LA girl, unlucky in love, falls for an East Coast guy on a dating app and decides to surprise him for the holidays, only to discover that she's been catfished. This lighthearted romantic comedy chronicles her attempt to reel in..."}
