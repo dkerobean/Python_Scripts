@@ -10,17 +10,16 @@ IBMD_ID = config.IBMD_ID
 
 # implement logging
 LOG_FORMAT = '%(levelname)s %(asctime)s - %(message)s'
-
 logging.basicConfig(filename="rating.log",
                     level=logging.DEBUG, format=LOG_FORMAT)
 log = logging.getLogger()
+
 
 if not API_KEY:
     raise ValueError("API key not found.")
 
 
 base_url = f"https://www.omdbapi.com/?i={IBMD_ID}&apikey={API_KEY}"
-
 header = {
     "accept": "application/json",
 }

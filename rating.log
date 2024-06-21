@@ -115,3 +115,88 @@ DEBUG 2024-06-18 20:36:13,423 - Pre-write cache checks: Passed
 DEBUG 2024-06-18 20:36:13,429 - Closing backend connections
 INFO 2024-06-18 20:36:13,429 - Recieved response from API
 INFO 2024-06-18 20:36:13,429 - Retrieved movie info {'Title': 'Love Hard', 'Year': '2021', 'Genre': 'Comedy, Romance', 'imdbRating': '6.3', 'imdbVotes': '61,374', 'Plot': "An LA girl, unlucky in love, falls for an East Coast guy on a dating app and decides to surprise him for the holidays, only to discover that she's been catfished. This lighthearted romantic comedy chronicles her attempt to reel in..."}
+DEBUG 2024-06-21 22:07:18,920 - Initializing backend: None omdb_cache
+DEBUG 2024-06-21 22:07:18,921 - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+DEBUG 2024-06-21 22:07:18,921 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:responses
+DEBUG 2024-06-21 22:07:18,922 - Initialized SQLiteDict with serializer: None
+DEBUG 2024-06-21 22:07:18,922 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:redirects
+DEBUG 2024-06-21 22:07:18,922 - Patching requests.Session with class: _ConfiguredCachedSession
+INFO 2024-06-21 22:07:24,294 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=the devils hour 
+DEBUG 2024-06-21 22:07:24,295 - Initializing backend: <SQLiteCache(name=omdb_cache)> omdb_cache
+DEBUG 2024-06-21 22:07:24,368 - Cache directives from request headers: CacheDirectives()
+DEBUG 2024-06-21 22:07:24,368 - Pre-read cache checks: Passed
+DEBUG 2024-06-21 22:07:24,368 - Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+DEBUG 2024-06-21 22:07:24,368 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-21 22:07:25,377 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=the%20devils%20hour%20 HTTP/1.1" 200 47
+DEBUG 2024-06-21 22:07:25,377 - Pre-write cache checks: Passed
+DEBUG 2024-06-21 22:07:25,380 - Closing backend connections
+INFO 2024-06-21 22:07:25,380 - Recieved response from API
+ERROR 2024-06-21 22:07:25,380 - Movie not found
+DEBUG 2024-06-21 22:07:32,425 - Initializing backend: None omdb_cache
+DEBUG 2024-06-21 22:07:32,425 - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+DEBUG 2024-06-21 22:07:32,426 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:responses
+DEBUG 2024-06-21 22:07:32,426 - Initialized SQLiteDict with serializer: None
+DEBUG 2024-06-21 22:07:32,426 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:redirects
+DEBUG 2024-06-21 22:07:32,426 - Patching requests.Session with class: _ConfiguredCachedSession
+INFO 2024-06-21 22:07:34,350 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=
+DEBUG 2024-06-21 22:07:34,350 - Initializing backend: <SQLiteCache(name=omdb_cache)> omdb_cache
+DEBUG 2024-06-21 22:07:34,362 - Cache directives from request headers: CacheDirectives()
+DEBUG 2024-06-21 22:07:34,362 - Pre-read cache checks: Passed
+DEBUG 2024-06-21 22:07:34,362 - Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+DEBUG 2024-06-21 22:07:34,362 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-21 22:07:34,717 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t= HTTP/1.1" 200 None
+DEBUG 2024-06-21 22:07:34,719 - Pre-write cache checks: Passed
+DEBUG 2024-06-21 22:07:34,725 - Closing backend connections
+INFO 2024-06-21 22:07:34,726 - Recieved response from API
+INFO 2024-06-21 22:07:34,726 - Retrieved movie info {'Title': 'Guardians of the Galaxy Vol. 2', 'Year': '2017', 'Genre': 'Action, Adventure, Comedy', 'imdbRating': '7.6', 'imdbVotes': '762,391', 'Plot': "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego."}
+DEBUG 2024-06-21 22:07:37,395 - Initializing backend: None omdb_cache
+DEBUG 2024-06-21 22:07:37,395 - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+DEBUG 2024-06-21 22:07:37,395 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:responses
+DEBUG 2024-06-21 22:07:37,396 - Initialized SQLiteDict with serializer: None
+DEBUG 2024-06-21 22:07:37,396 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:redirects
+DEBUG 2024-06-21 22:07:37,396 - Patching requests.Session with class: _ConfiguredCachedSession
+INFO 2024-06-21 22:07:44,007 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=devils hour 
+DEBUG 2024-06-21 22:07:44,007 - Initializing backend: <SQLiteCache(name=omdb_cache)> omdb_cache
+DEBUG 2024-06-21 22:07:44,025 - Cache directives from request headers: CacheDirectives()
+DEBUG 2024-06-21 22:07:44,026 - Pre-read cache checks: Passed
+DEBUG 2024-06-21 22:07:44,026 - Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+DEBUG 2024-06-21 22:07:44,027 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-21 22:07:45,057 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=devils%20hour%20 HTTP/1.1" 200 47
+DEBUG 2024-06-21 22:07:45,058 - Pre-write cache checks: Passed
+DEBUG 2024-06-21 22:07:45,061 - Closing backend connections
+INFO 2024-06-21 22:07:45,061 - Recieved response from API
+ERROR 2024-06-21 22:07:45,061 - Movie not found
+DEBUG 2024-06-21 22:08:09,232 - Initializing backend: None omdb_cache
+DEBUG 2024-06-21 22:08:09,232 - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+DEBUG 2024-06-21 22:08:09,232 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:responses
+DEBUG 2024-06-21 22:08:09,234 - Initialized SQLiteDict with serializer: None
+DEBUG 2024-06-21 22:08:09,234 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:redirects
+DEBUG 2024-06-21 22:08:09,234 - Patching requests.Session with class: _ConfiguredCachedSession
+INFO 2024-06-21 22:08:11,444 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=The Devil's Hour
+DEBUG 2024-06-21 22:08:11,444 - Initializing backend: <SQLiteCache(name=omdb_cache)> omdb_cache
+DEBUG 2024-06-21 22:08:11,464 - Cache directives from request headers: CacheDirectives()
+DEBUG 2024-06-21 22:08:11,464 - Pre-read cache checks: Passed
+DEBUG 2024-06-21 22:08:11,464 - Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+DEBUG 2024-06-21 22:08:11,465 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-21 22:08:12,535 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=The%20Devil's%20Hour HTTP/1.1" 200 None
+DEBUG 2024-06-21 22:08:12,535 - Pre-write cache checks: Passed
+DEBUG 2024-06-21 22:08:12,538 - Closing backend connections
+INFO 2024-06-21 22:08:12,538 - Recieved response from API
+INFO 2024-06-21 22:08:12,538 - Retrieved movie info {'Title': "The Devil's Hour", 'Year': '2022–', 'Genre': 'Drama, Thriller', 'imdbRating': '7.6', 'imdbVotes': '25,711', 'Plot': "A woman who wakes up every night at exactly 3.33AM, in the middle of the so-called devil's hour between 3AM and 4AM."}
+DEBUG 2024-06-21 22:10:02,127 - Initializing backend: None omdb_cache
+DEBUG 2024-06-21 22:10:02,127 - Initialized SQLiteDict with serializer: SerializerPipeline(name=pickle, n_stages=2)
+DEBUG 2024-06-21 22:10:02,127 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:responses
+DEBUG 2024-06-21 22:10:02,129 - Initialized SQLiteDict with serializer: None
+DEBUG 2024-06-21 22:10:02,129 - Opening connection to /Users/dicksonkerobean/Dev/python_scripts/ibmd_movie_rating_checker/omdb_cache.sqlite:redirects
+DEBUG 2024-06-21 22:10:02,129 - Patching requests.Session with class: _ConfiguredCachedSession
+INFO 2024-06-21 22:10:15,141 - Requesting URL: https://www.omdbapi.com/?i=tt3896198&apikey=e25d2434&t=she's out of my league
+DEBUG 2024-06-21 22:10:15,141 - Initializing backend: <SQLiteCache(name=omdb_cache)> omdb_cache
+DEBUG 2024-06-21 22:10:15,157 - Cache directives from request headers: CacheDirectives()
+DEBUG 2024-06-21 22:10:15,157 - Pre-read cache checks: Passed
+DEBUG 2024-06-21 22:10:15,158 - Post-read cache actions: CacheActions(expire_after=datetime.timedelta(seconds=3600), send_request=True)
+DEBUG 2024-06-21 22:10:15,158 - Starting new HTTPS connection (1): www.omdbapi.com:443
+DEBUG 2024-06-21 22:10:16,204 - https://www.omdbapi.com:443 "GET /?i=tt3896198&apikey=e25d2434&t=she's%20out%20of%20my%20league HTTP/1.1" 200 None
+DEBUG 2024-06-21 22:10:16,205 - Pre-write cache checks: Passed
+DEBUG 2024-06-21 22:10:16,207 - Closing backend connections
+INFO 2024-06-21 22:10:16,207 - Recieved response from API
+INFO 2024-06-21 22:10:16,207 - Retrieved movie info {'Title': "She's Out of My League", 'Year': '2010', 'Genre': 'Comedy, Romance', 'imdbRating': '6.4', 'imdbVotes': '145,397', 'Plot': 'An average Joe meets the perfect woman, but his lack of confidence and the influence of his friends and family begin to pick away at the relationship.'}
